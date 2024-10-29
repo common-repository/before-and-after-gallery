@@ -1,0 +1,27 @@
+<div class="wrap" id="before-after-gallery-manager">
+    <h2>Before and After Gallery Settings</h2>
+    <form method="post" action="options.php">
+        <?php settings_fields('before-after-gallery-options'); ?>
+        <fieldset>
+            <p>Galleries can be added to a page using the following shortcode format (where "123" is the ID of the gallery):<br />
+                <code>[before-after-gallery id="123"]</code>.</p>
+            <p>If you need to trigger the gallery using a separate link, you can add the following onclick event to your HTML element (where "123" is the ID of the gallery):<br />
+                <code>onclick="triggerBeforeAfterGallery(123)"</code></p>
+            <table class="widefat fixed">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Thumb</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {rows}
+                </tbody>
+            </table>
+            <p><a href="?page=before-after-gallery&action=edit_gallery" class="add">Add new gallery</a></p>
+        </fieldset>
+    </form>
+</div>

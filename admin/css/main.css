@@ -1,0 +1,11 @@
+#before-after-gallery-manager td img{
+    vertical-align:middle;
+    max-width:100px;
+    max-height:50px;
+}#before-after-gallery-manager td a{
+     vertical-align:middle;
+ }
+#before-after-gallery-manager  input[type="text"],
+#before-after-gallery-manager  input[type="url"]{
+    width:400px;
+}

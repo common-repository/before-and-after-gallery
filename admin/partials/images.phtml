@@ -1,0 +1,46 @@
+<div class="wrap" id="before-after-gallery-manager">
+    <h2>Before and After Gallery Settings</h2>
+    <p><a href="?page=before-after-gallery" class="add">&laquo; back</a></p>
+
+    <form method="post" action="?page=before-after-gallery&action=save_gallery&gallery_id={id}">
+        <?php settings_fields('before-after-gallery-options'); ?>
+        <fieldset>
+            <table>
+                <tbody>
+                    <tr>
+                        <th><label>Name:</label></th>
+                        <td><input type="text" required="required" value="{name}" name="name" /></td>
+                    </tr>
+                    <tr>
+                        <th><label>Thumb URL:</label></th>
+                        <td><input type="url" required="required" value="{thumb_url}" name="thumb_url" />
+                            <a href="#" id="insert-media-button" class="button insert-media add_media" title="Add Media">
+                                <span class="wp-media-buttons-icon"></span> Add Media</a>
+                            <img src="{thumb_url}" alt="" /></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><input type="submit" value="Save" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Images</h3>
+            <table class="widefat fixed">
+                <tr>
+                    <thead>
+                        <th>ID</th>
+                        <th>Thumb</th>
+                        <th>Weight</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                </tr>
+                <tbody>
+                    {rows}
+                </tbody>
+            </table>
+            <p><a href="?page=before-after-gallery&action=edit_image&gallery_id={id}" class="add">Add new image</a></p>
+        </fieldset>
+    </form>
+</div>

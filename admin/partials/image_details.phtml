@@ -1,0 +1,43 @@
+<div class="wrap" id="before-after-gallery-manager">
+    <h2>Before and After Gallery Settings</h2>
+    <p><a href="?page=before-after-gallery&action=edit_gallery&gallery_id={id}" class="add">&laquo; back</a></p>
+
+    <form method="post" action="?page=before-after-gallery&action=save_image&gallery_id={id}&image_id={image_id}">
+        <?php settings_fields('before-after-gallery-options'); ?>
+        <fieldset>
+            <table>
+                <tbody>
+                    <tr>
+                        <th><label>Before Image URL:</label></th>
+                        <td><input type="url" required="required" value="{before_url}" name="before_url" />
+                            <a href="#" id="insert-media-button" class="button insert-media add_media" title="Add Media">
+                                <span class="wp-media-buttons-icon"></span> Add Media</a>
+                            <img src="{before_url}" alt="" /></td>
+                    </tr>
+                    <tr>
+                        <th><label>After Image URL:</label></th>
+                        <td><input type="url" required="required" value="{after_url}" name="after_url" />
+                            <a href="#" id="insert-media-button" class="button insert-media add_media" title="Add Media">
+                                <span class="wp-media-buttons-icon"></span> Add Media</a>
+                            <img src="{after_url}" alt="" /></td>
+                    </tr>
+                    <tr>
+                        <th><label>Image Thumb URL:</label></th>
+                        <td><input type="url" required="required" value="{thumb_url}" name="thumb_url" />
+                            <a href="#" id="insert-media-button" class="button insert-media add_media" title="Add Media">
+                                <span class="wp-media-buttons-icon"></span> Add Media</a>
+                            <img src="{thumb_url}" alt="" /></td>
+                    </tr>
+                    <tr>
+                        <th><label>Weight:</label></th>
+                        <td><input type="number" required="required" value="{sort_id}" name="sort_id" /></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><input type="submit" value="Save" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</div>

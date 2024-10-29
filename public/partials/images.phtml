@@ -1,0 +1,44 @@
+<span class="beforeAfterGallery_main beforeAfterGallery_{id}" data-default-filter="{default_filter}">
+    <a href="#"><img src="{thumb}" alt="" /></a>
+
+    <div class="beforeAfterGallery_modal modal fade out" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="twentytwenty-container"></div>
+
+                    <!-- Controls -->
+                    <a class="left beforeAfterGallery_image-control" href="#" role="button">
+                        <span></span>
+                    </a>
+                    <a class="right beforeAfterGallery_image-control" href="#" role="button">
+                        <span></span>
+                    </a>
+
+                </div>
+                <div class="modal-footer">
+                    <div id="carousel-{id}" class="beforeAfterGallery_carousel">
+                        <div class="beforeAfterGallery_carousel-inner" role="listbox"></div>
+
+                        <!-- Controls -->
+                        <a class="left beforeAfterGallery_carousel-control" href="#carousel-{id}" role="button">
+                            <span></span>
+                        </a>
+                        <a class="right beforeAfterGallery_carousel-control" href="#carousel-{id}" role="button">
+                            <span></span>
+                        </a>
+                    </div>
+
+                    <ul class="item">
+                        {rows}
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</span>
